@@ -1,5 +1,6 @@
-import { db } from "./firebaseConfig";
-import {  collection,  query,  where,  getDocs,  doc,  getDoc,  addDoc, updateDoc, orderBy  } from "firebase/firestore";
+import './firebaseconfig'
+import { db } from "./firebaseconfig";
+import {  collection,  query,  where,  getDocs,  doc,  getDoc,  addDoc, updateDoc,  } from "firebase/firestore";
 import { async } from "@firebase/util";
 
 export const getAllProducts = async (tipo = undefined) => {
