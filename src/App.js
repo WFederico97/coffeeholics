@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarHeader from './Components/Header/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import HomeSection from './Pages/Home/Home';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 
 
 
@@ -18,9 +19,9 @@ function App() {
 
         <Routes>
           <Route path='/' element={<HomeSection />} />
-          <Route path='/shop' />
+          <Route path='/shop' element={<ItemListContainer greeting={'¡Bienvenidos/as al shop de Coffeeholics!'} />} />
           <Route path='/category/:tipo' />
-          <Route path='/item/:id' />
+          <Route path='/producto/:id' />
         </Routes>
 
         <footer>
