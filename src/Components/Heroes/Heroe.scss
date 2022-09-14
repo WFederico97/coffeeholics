@@ -1,0 +1,45 @@
+@import '../../sass/fonts';
+@import '../../sass/vars';
+
+.heroSection {
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    height: 150vh;
+    margin: 12em 0 0 0;
+}
+
+.heroSection h1 {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    font-size: 5em;
+    font-family: $fontTitle;
+    color: $fontColor;
+    align-self: center;
+    text-shadow: 5px 4px 2px $shadowColor;
+}
+
+.heroImg img{
+    position: absolute;
+    height: 150vh;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.paragraph{
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em;
+    text-align: justify;
+    color: $fontColor;
+    font-family: $fontParagraph;
+}
+.paragraph h4 {
+    text-shadow: 5px 4px 2px $shadowColor;
+    font-size: 2em;
+    font-family: $fontTitle;
+}

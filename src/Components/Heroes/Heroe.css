@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&display=swap");
+.heroSection {
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  height: 150vh;
+  margin: 12em 0 0 0;
+}
+
+.heroSection h1 {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  font-size: 5em;
+  font-family: "Alfa Slab One", cursive;
+  color: #fff;
+  align-self: center;
+  text-shadow: 5px 4px 2px #603F0E;
+}
+
+.heroImg img {
+  position: absolute;
+  height: 150vh;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.paragraph {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  text-align: justify;
+  color: #fff;
+  font-family: "Anton", sans-serif;
+}
+
+.paragraph h4 {
+  text-shadow: 5px 4px 2px #603F0E;
+  font-size: 2em;
+  font-family: "Alfa Slab One", cursive;
+}/*# sourceMappingURL=Heroe.css.map */

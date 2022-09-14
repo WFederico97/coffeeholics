@@ -1,0 +1,28 @@
+@import "../../../sass/fonts";
+@import "../../../sass/vars";
+
+.App-logo {
+  height: 4em;
+  pointer-events: none;
+  border-radius: 70%;
+}
+
+.nav-link {
+    color: $fontColor;
+    font-family: $fontTitle;
+}
+
+.nav-link:hover  {
+    color: $colorLinkHovered;
+    -webkit-transform: scale(1.08); 
+    transform: scale(1.08);
+}
+
+.coverHomeH3 {
+  color: $fontColor;
+  font-family: $fontTitle;
+}
+
+.homeLink {
+    text-decoration: none;
+}

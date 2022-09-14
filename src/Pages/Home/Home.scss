@@ -1,0 +1,96 @@
+@import "../../sass/fonts";
+@import "../../sass/vars";
+
+.mainSection {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  height: 40em;
+  background-color: #000000;
+  margin: 0 0 12em 0;
+}
+
+.mainImg {
+  position: absolute;
+  height: 60em;
+  opacity: 0.3;
+}
+
+.mainHomeGreeting h1 {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  font-size: 3em;
+  font-family: $fontTitle;
+  color: $fontColor;
+  text-shadow: 5px 7px 2px #000000;
+}
+.mainHomeGreeting p {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+  text-align: right;
+  color: $fontColor;
+  font-family: $fontParagraph;
+}
+
+.coffeeSection {
+  color: $fontColor;
+  font-family: $fontParagraph;
+  text-shadow: 5px 4px 2px $shadowColor;
+  margin: 0 0 12em 0;
+}
+.coffeeSection img {
+  box-shadow: $shadowColor 18px 15px 7px;
+}
+
+.coffeeSectionImg {
+  height: 20em;
+  width: 20em;
+}
+
+.aboutTeam {
+  gap: 1em;
+  justify-content: center;
+}
+
+.aboutTeamH1 {
+  font-family: $fontTitle;
+  text-shadow: 2px 3px 2px $shadowColor;
+  color: #fff;
+}
+
+.teamItem {
+  background-color: #603f0e;
+  box-shadow: 0 0.5rem 1rem #0000001a;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 43%;
+}
+
+.teamItemContent {
+  font-family: $fontParagraph;
+  color: #fff;
+  margin: 1em;
+  text-shadow: 2px 3px 2px #000000;
+}
+
+.teamItemImage {
+  overflow: hidden;
+  border-radius: 45%;
+}
+
+.teamItemImage img {
+  height: 16em;
+  width: 16em;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.teamItem:hover .teamItemImage img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}

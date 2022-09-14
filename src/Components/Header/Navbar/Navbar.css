@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&display=swap");
+.App-logo {
+  height: 4em;
+  pointer-events: none;
+  border-radius: 70%;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.coverHomeH3 {
+  color: #fff;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.homeLink {
+  text-decoration: none;
+}/*# sourceMappingURL=Navbar.css.map */
