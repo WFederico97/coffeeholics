@@ -6,7 +6,7 @@ import './Item.scss'
 export default function Item({producto}) {
     return (
         <>
-            <Link to={`/shop/producto/${producto.id}`} className='productCard'>
+            <Link to={`/producto/${producto.id}`} className='productCard'>
                 <Card >
                     <Card.Img variant="top" src={producto.img} alt={producto.name} className='img-fluid imgProducto' />
                     <Card.Body>
