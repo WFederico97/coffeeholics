@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navbar.scss'
-import { RiShoppingCart2Fill, RiUserFill } from "react-icons/ri";
+import {  RiUserFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import CartWidget from '../../Cart/Cart Widget/Cart-Widget';
 
 const NavbarHeader = () => {
 
@@ -26,7 +27,7 @@ const NavbarHeader = () => {
                             <Nav.Link href="/#Franchise">Franchising</Nav.Link>
                             <Nav.Link as={Link} to={'/shop'}>Coffeeshop</Nav.Link>
                             <RiUserFill id='login' className='navbarIcon' style={{ width: '2em', height: '2em', color: '#fff', margin: '1em' }} />
-                            <RiShoppingCart2Fill id='cart' className='navbarIcon' style={{ width: '2em', height: '2em', color: '#fff', margin: '1em' }} />
+                            <CartWidget/>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
