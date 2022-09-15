@@ -40,7 +40,7 @@ const CartProvider = ({ children }) => {
     }
 
     function montoTotalCart() {
-        return cartList.reduce((total, item)=> total + (item.qty * item.precio), 0)
+        return cartList.reduce((total, item)=> total + (item.qty * item.price), 0)
     }
 
     function IVA() {
