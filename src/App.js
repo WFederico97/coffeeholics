@@ -5,9 +5,9 @@ import NavbarHeader from './Components/Header/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import HomeSection from './Pages/Home/Home';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import ItemDetail from './Components/ItemDetail/ItemDetail';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './Context/CartContext';
+import Cart from './Components/Cart/Cart';
 
 
 
@@ -26,6 +26,7 @@ function App() {
             <Route path='/shop' element={<ItemListContainer greeting={'¡Bienvenidos/as al shop de Coffeeholics!'} />} />
             <Route path='/category/:tipo' element={<ItemListContainer greeting={'¡Bienvenidos/as al shop de Coffeeholics!'} />} />
             <Route path='/producto/:id' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
           </Routes>
 
           <footer>
