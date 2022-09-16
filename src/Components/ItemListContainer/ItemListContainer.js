@@ -18,7 +18,7 @@ export default function ItemListContainer ({greeting}) {
             setProductos(productos);
             setIsLoading(false)
         });
-    }, [tipo]);
+    },  [tipo]);
 
     return (
         <section className="itemListContainer">
