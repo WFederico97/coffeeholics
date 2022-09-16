@@ -12,15 +12,15 @@ const NavbarHeader = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' className="navbarHeader">
-                <Container>
+                <Container fluid>
                     <Navbar.Brand href="#home" >
                         <div className='col-6'>
                             <Link to={'/'} className='homeLink' ><h3 className=" coverHomeH3"> <img className='App-logo' src='./Images/logotipo-cafeteria-favicon.png' alt='icon' /> Coffeeholics</h3></Link>
                         </div>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav fill className="d-flex col  col-12 ">
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav fill className="d-flex col  col-12 " navbarScroll>
                             <Nav.Link href="/#Home">Home</Nav.Link>
                             <Nav.Link href="/#Coffee">Sobre Cafe</Nav.Link>
                             <Nav.Link href="/#About">Sobre Nosotros</Nav.Link>

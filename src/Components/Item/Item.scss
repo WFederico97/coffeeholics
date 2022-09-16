@@ -1,32 +1,44 @@
-@import '../../sass/fonts';
-@import '../../sass/vars';
-.cardItem-container{
-    width: 25em;
-    margin: 1em;
-    .cardItem{
-        display: flex;
-        flex-direction: row;
-        columns: 12;
-        flex-wrap: wrap;
-        border: transparent;
-        background-color: adjust-hue($color: #3c2c14, $degrees: 12); //TO DO: ajustar color 
-        .cardItem-img{
-            height: 12em;
-            width: 12em;
+@import "../../sass/fonts";
+@import "../../sass/vars";
+.cardItem-container {
+  width: 25em;
+  margin: 1em;
+  .productCard {
+    text-decoration: none;
+
+
+    .cardItem {
+      display: flex;
+      flex-direction: row;
+      columns: 12;
+      flex-wrap: wrap;
+      border: transparent;
+      background-color: adjust-hue(
+        $color: $cardBackgroundColor,
+        $degrees: 12
+      );
+      box-shadow: 20px 12px 2px $shadowColor; 
+      .cardItem-img {
+        height: 12em;
+        width: 12em;
+        border-radius: 50%;
+        justify-content: center;
+        margin: 1em;
+      }
+      .cardItem-text {
+        .cardItem-text-p {
+          color: $colorFontParagraph;
+          text-shadow: -4px -3px $shadowTextColor;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          columns: 6;
+          font-family: $fontParagraph;
+          font-size: 1.7em;
+          word-wrap: break-word;
+          justify-content: center;
         }
-        .cardItem-text{
-            .cardItem-text-p {
-                color: $colorFontParagraph;
-                text-shadow: -4px -3px  $shadowTextColor;
-                position: relative;
-                display: flex;
-                flex-direction: row;
-                columns: 6;
-                font-family: $fontParagraph;
-                font-size: 1.7em;
-                word-wrap: break-word;
-                justify-content: center;
-              }
-        }
+      }
     }
+  }
 }

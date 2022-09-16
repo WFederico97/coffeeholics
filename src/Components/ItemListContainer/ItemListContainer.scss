@@ -1,0 +1,11 @@
+@import '../../sass/fonts';
+@import '../../sass/vars';
+.itemListContainer {
+    .greeting{
+        text-align: center;
+        font-size: 4em;
+        font-family: $fontTitle;
+        color: $fontColor;
+        filter: drop-shadow(6px 6px 1px $shadowColor);
+    }
+}
