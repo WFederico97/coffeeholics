@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&display=swap");
+.itemCounter-container {
+  display: flex;
+  flex-direction: column;
+  -moz-columns: 12;
+       columns: 12;
+}
+.itemCounter-container .itemCount-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.itemCounter-container .itemCount-btn .itemCount-control-btnRest {
+  width: 100%;
+  font-size: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+.itemCounter-container .itemCount-btn .itemCount-control-btnSum {
+  width: 100%;
+  font-size: 1em;
+  margin-left: 1em;
+  border-radius: 50%;
+}
+.itemCounter-container .itemCount-btn .itemCounter-count {
+  color: #fff;
+  text-shadow: 3px -3px #257ecb;
+  font-size: 1.8em;
+}
+.itemCounter-container .itemCount-stock {
+  color: #fff;
+  text-shadow: -3px -3px #000000;
+  font-size: 1.2em;
+}
+.itemCounter-container .itemCounter-btn-container {
+  display: flex;
+  flex-direction: row;
+  -moz-columns: 6;
+       columns: 6;
+}
+.itemCounter-container .itemCounter-btn-container .itemCount-btn-cart {
+  width: 100%;
+  font-size: 1em;
+  margin: 1em;
+}
+.itemCounter-container .itemCount-btn-goCart-container {
+  display: flex;
+  flex-direction: column;
+  -moz-columns: 6;
+       columns: 6;
+}
+.itemCounter-container .itemCount-btn-goCart-container .itemCount-btn-goCart {
+  width: 100%;
+  font-size: 1em;
+}/*# sourceMappingURL=ItemCount.css.map */

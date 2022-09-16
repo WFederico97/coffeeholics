@@ -4,7 +4,7 @@ import { useCartContext } from '../../Context/CartContext'
 import { updateStock } from '../../Firebase/firebaseCalls'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+
 import ItemCount from '../ItemCount/ItemCount';
 
 export default function ItemDetail({ producto }) {
@@ -21,19 +21,17 @@ export default function ItemDetail({ producto }) {
         }
     }
     return (
-        <Card >
-            <Card.Img variant="top" src={producto.img} className='img-fluid' />
-            <Card.Body>
-                <Card.Title>{producto.name}</Card.Title>
-                <Card.Text>
+        <Card className='cardItemDetail'>
+            <Card.Img variant="top" src={producto.img} className='img-fluid cardItemDetail-img' />
+            <Card.Body className='cardItemDetail-body'>
+                <Card.Title className='cardItemDetail-title'><h4>{producto.name}</h4></Card.Title>
+                <Card.Text className='cardItemDetail-text'>
                     {producto.details}
                 </Card.Text>
-                <Card.Text>
-                    Disponibilidad : <span>{
-                        producto.stock > 0 ? <Badge bg='success'>En stock</Badge> : <Badge bg='danger'>Sin stock</Badge>
-                    }</span>
-                </Card.Text>
-                <ItemCount stock={stockProducto} initial={1} onAdd={onAdd} />
+                <div className='cardItemDetail-counter'>
+                <ItemCount  stock={stockProducto} initial={1} onAdd={onAdd} />
+                </div>
+
             </Card.Body>
         </Card>
     )

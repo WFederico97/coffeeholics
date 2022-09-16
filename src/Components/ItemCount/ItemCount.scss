@@ -1,0 +1,57 @@
+@import "../../sass/fonts";
+@import "../../sass/vars";
+
+.itemCounter-container {
+  display: flex;
+  flex-direction: column;
+  columns: 12;
+  .itemCount-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .itemCount-control-btnRest {
+      width: 100%;
+      font-size: 1em;
+      margin-right: 1em;
+      border-radius: 50%;
+    }
+
+    .itemCount-control-btnSum {
+      width: 100%;
+      font-size: 1em;
+      margin-left: 1em;
+      border-radius: 50%;
+    }
+    .itemCounter-count {
+      color: $colorFontParagraph;
+      text-shadow: 3px -3px $shadowTextColor;
+      font-size: 1.8em;
+    }
+  }
+  .itemCount-stock {
+    color: $colorFontParagraph;
+    text-shadow: -3px -3px $blackColor;
+    font-size: 1.2em;
+  }
+  .itemCounter-btn-container {
+    display: flex;
+    flex-direction: row;
+    columns: 6;
+    .itemCount-btn-cart {
+      width: 100%;
+      font-size: 1em;
+      margin: 1em;
+    }
+  }
+  .itemCount-btn-goCart-container {
+    display: flex;
+    flex-direction: column;
+    columns: 6;
+    .itemCount-btn-goCart {
+      width: 100%;
+      font-size: 1em;
+    }
+  }
+}

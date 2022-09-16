@@ -1,6 +1,4 @@
-@import "../../sass/vars";
-@import "../../sass/fonts";
-
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&display=swap");
 .cardItemDetail {
   height: 40em;
   width: 100%;
@@ -9,14 +7,16 @@
   border-top-left-radius: 11%;
   display: flex;
   flex-direction: row;
-  columns: 12;
+  -moz-columns: 12;
+       columns: 12;
   align-items: flex-start;
 }
 
 .cardItemDetail-img {
   display: flex;
   flex-direction: row;
-  columns: 6;
+  -moz-columns: 6;
+       columns: 6;
   border-bottom-left-radius: 11%;
   border-top-left-radius: 11%;
   width: 35em;
@@ -28,13 +28,14 @@
   height: 40em;
   display: flex;
   flex-direction: column;
-  columns: 6;
+  -moz-columns: 6;
+       columns: 6;
   justify-content: center;
 }
 
 .cardItemDetail-body::before {
   content: " ";
-  background:linear-gradient(rgba(255, 255, 255, 0.341), rgba(255, 255, 255, 0.341)), url(https://res.cloudinary.com/dwyqyqadz/image/upload/v1663028471/Images/coffeeholics/granos-cafe-cover_udly99.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.341), rgba(255, 255, 255, 0.341)), url(https://res.cloudinary.com/dwyqyqadz/image/upload/v1663028471/Images/coffeeholics/granos-cafe-cover_udly99.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -47,23 +48,24 @@
 .cardItemDetail-title,
 h4 {
   position: relative;
-  color: $shadowColor;
+  color: #603F0E;
   text-align: center;
   font-size: 2em;
-  font-family: $fontTitle;
+  font-family: "Alfa Slab One", cursive;
   background-color: transparent;
-  filter: drop-shadow(5px 3px 3px $blackColor);
+  filter: drop-shadow(5px 3px 3px #000000);
 }
 
 .cardItemDetail-text,
 .cardItemDetail-text-p {
-  color: $colorFontParagraph;
-  text-shadow: -4px -3px  $shadowTextColor;
+  color: #fff;
+  text-shadow: -4px -3px #257ecb;
   position: relative;
   display: flex;
   flex-direction: row;
-  columns: 6;
-  font-family: $fontParagraph;
+  -moz-columns: 6;
+       columns: 6;
+  font-family: "Anton", sans-serif;
   font-size: 1.7em;
   word-wrap: break-word;
   justify-content: center;
@@ -73,9 +75,10 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: row;
-  columns: 6;
+  -moz-columns: 6;
+       columns: 6;
   text-align: center;
   justify-content: center;
-  font-family: $fontParagraph;
+  font-family: "Anton", sans-serif;
   font-size: 1.5em;
-}
+}/*# sourceMappingURL=ItemDetail.css.map */

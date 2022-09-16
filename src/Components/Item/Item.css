@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Lobster&display=swap");
+.cardItem-container {
+  width: 25em;
+  margin: 1em;
+}
+.cardItem-container .cardItem {
+  display: flex;
+  flex-direction: row;
+  -moz-columns: 12;
+       columns: 12;
+  flex-wrap: wrap;
+  border: transparent;
+  background-color: #3c3414;
+}
+.cardItem-container .cardItem .cardItem-img {
+  height: 12em;
+  width: 12em;
+}
+.cardItem-container .cardItem .cardItem-text .cardItem-text-p {
+  color: #fff;
+  text-shadow: -4px -3px #257ecb;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  -moz-columns: 6;
+       columns: 6;
+  font-family: "Anton", sans-serif;
+  font-size: 1.7em;
+  word-wrap: break-word;
+  justify-content: center;
+}/*# sourceMappingURL=Item.css.map */

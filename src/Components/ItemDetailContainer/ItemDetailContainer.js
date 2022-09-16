@@ -19,7 +19,7 @@ export default function ItemDetailContainer () {
     }, [])
 
     return (
-        <div>
+        <div className="itemDetailContainer container-fluid d-flex col col-12 justify-content-center">
             {
                 isLoading ? (<Spinner/>) : (<ItemDetail producto={producto} />)
             }
