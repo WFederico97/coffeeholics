@@ -1,12 +1,36 @@
 @import '../../../sass/vars';
-@import '../../../sass/vars'; 
-#cart g {
-    color: $shadowColor;
+@import '../../../sass/fonts'; 
+
+.cartWidget-container-link{
+    text-decoration: none;
     
+    .cartWidget-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    
+        .navbarIcon-qtyItems{
+            font-family: $fontParagraph;
+            padding: 0.5em;
+            background-color: $shadowColor;
+            border-radius: 50%;
+            font-size: 1.5em;
+            color: $colorLinkHovered;
+
+        }
+        #cart g {
+            color: $shadowColor;
+            
+        }
+        
+        #cart {
+            background-color: $colorLinkHovered;
+            border-radius: 20%;
+                    text-decoration: none;
+            
+        }
+    }
 }
 
-#cart {
-    background-color: $colorLinkHovered;
-    border-radius: 20%;
-    
-}
+
