@@ -1,0 +1,23 @@
+@import "../../../sass/fonts";
+@import "../../../sass/vars";
+.cartItem-container {
+  display: flex;
+  flex-direction: row;
+  .cartItem-leftSide {
+    .cartItem-img {
+      height: 15em;
+      width: 15em;
+    }
+  }
+  .cartItem-rightSide {
+    .cartItem-rightSide-tittle {
+
+    }
+    .cartItem-rightSide-category{
+
+    }
+    .cartItem-rightSide-prices{
+        
+    }
+  }
+}

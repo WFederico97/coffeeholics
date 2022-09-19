@@ -5,6 +5,7 @@ import { productosById, updateStock } from '../../../Firebase/firebaseCalls';
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
 import { FaTrash } from "react-icons/fa";
+import './CartDetail.scss'
 
 export default function CartDetail({item}) {
     const {addCart, removeItem} = useCartContext();
