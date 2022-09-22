@@ -1,23 +1,46 @@
 @import "../../../sass/fonts";
 @import "../../../sass/vars";
 .cartItem-container {
-  display: flex;
-  flex-direction: row;
+  padding: 2em;
+  border: black solid 3px;
+
   .cartItem-leftSide {
+    border: rgb(255, 255, 255) solid 3px;
+    margin: 1em;
     .cartItem-img {
-      height: 15em;
-      width: 15em;
+      height: 22em;
+      width: 22em;
+      object-fit: contain;
     }
   }
   .cartItem-rightSide {
+    border: rgb(255, 255, 255) solid 3px;
+    justify-content: center;
+    font-family: $fontParagraph;
+    color: $fontColor; //To Do: fix colors and cart front end
+
     .cartItem-rightSide-tittle {
-
     }
-    .cartItem-rightSide-category{
-
+    .cartItem-rightSide-category {
     }
-    .cartItem-rightSide-prices{
-        
+    .cartItem-rightSide-prices {
+    }
+  }
+  .cartItem-cantidades {
+    border: rgb(255, 0, 0) solid 3px;
+    margin: 1em;
+    color: $fontColor;
+    font-family: $fontParagraph;
+    justify-content: center;
+    align-items: center;
+    
+    .cartItem-detail {
+
+      .cartItem-detail-counter {
+        align-items: center;
+      }
+    }
+    .cartItem-cantidades-stock {
     }
   }
 }
