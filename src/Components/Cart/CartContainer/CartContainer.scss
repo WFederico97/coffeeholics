@@ -1,0 +1,18 @@
+@import '../../../sass/fonts';
+@import '../../../sass/vars';
+
+.cartContainer-title{
+    font-family: $fontTitle;
+    color: $fontColor;
+    text-shadow: $shadowColor 5px 5px 1px;
+
+    .cartContainer-title-keepshopingBtn{
+        .cartContainer-title-keepshopingBtn-link{
+            text-decoration: none;
+            color: $fontColor;
+        }
+    }   
+}
+.cartDetail-container{
+
+}
