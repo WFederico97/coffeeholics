@@ -6,6 +6,7 @@ import CartDetail from "../CartDetail/CartDetail";
 import { updateStock } from "../../../Firebase/firebaseCalls";
 import Container from "react-bootstrap/esm/Container";
 import NoItemModal from "../../Modals/NoItemsModal/NoItemModal";
+import BuyerForm from "../../Forms/BuyerForm/BuyerForm";
 
 export default function CartContainer() {
     const { cartList, clearCart, qtyItems, montoTotalCart, IVA, montoFinal } = useCartContext();
@@ -65,11 +66,11 @@ export default function CartContainer() {
                         <img src={"./Images/paypal-svgrepo-com.svg"} alt='paypal logo'/>
                     </div>
 
-                    {/* <div className="buttons-container">
+                     <div className="buttons-container">
                         {
-                            qtyItems > 0 ? <FormCompra /> : <NoItemModal />
+                            qtyItems() > 0 ? <BuyerForm /> : <NoItemModal />
                         }
-                    </div> */}
+                    </div> 
                 </div>
             </Container>
         </>
