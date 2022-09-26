@@ -22,6 +22,7 @@ export default function ItemDetail({ producto }) {
     }
     return (
         <Card className='cardItemDetail'>
+            
             <Card.Img variant="top" src={producto.img} className='img-fluid cardItemDetail-img' />
             <Card.Body className='cardItemDetail-body'>
                 <Card.Title className='cardItemDetail-title'><h4>{producto.name}</h4></Card.Title>
