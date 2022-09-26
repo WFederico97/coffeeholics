@@ -63,7 +63,7 @@ export default function BuyerForm() {
 
   return (
     <div className="buyerForm-container">
-      <Button onClick={handleShow} className='finalizarCompra-button'>Finalizar Compra</Button>
+      <Button onClick={handleShow} className='finalizarCompra-button w-50'>Finalizar Compra</Button>
       <Modal
         show={show}
         onHide={handleClose}
@@ -151,9 +151,8 @@ export default function BuyerForm() {
               label='Teléfono'
               className="mb-3">
               <Form.Control
-                type='tel'
+                type='number'
                 placeholder="Ingrese su numero de telefono"
-                pattern="[0-9]{10} "
 
               />
             </FloatingLabel>
