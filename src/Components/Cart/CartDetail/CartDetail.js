@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useCartContext } from '../../../Context/CartContext'
 import { Link } from "react-router-dom";
 import { productosById, updateStock } from '../../../Firebase/firebaseCalls';
-import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/Button";
 import { FaTrash } from "react-icons/fa";
 import './CartDetail.scss'
@@ -41,16 +40,16 @@ export default function CartDetail({ item }) {
     }
 
     return (
-        <div className='cartItem-container'>
-            <div className='cartItem-leftSide col-12'>
+        <div className='cartItem-container d-flex row'>
+            <div className='cartItem-leftSide col-12 d-flex'>
                 <Link to={`/producto/${item.id}`}>
-                    <img className='cartItem-img' src={item.img} alt={item.name} />
+                    <img className='cartItem-img d-flex col-6 img-fluid ' src={item.img} alt={item.name} />
                 </Link>
-                <div className='cartItem-rightSide'>
+                <div className='cartItem-rightSide d-flex row col-6 '>
                     <p className='cartItem-rightSide-tittle  '>{item.name}</p>
-                    <p className='cartItem-rightSide-category '>Categoría: <span><p className='text-uppercase'> {item.category} </p> </span></p>
-                    <div className='cartItem-rightSide-prices'>
-                        <p className='cartItem-rightSide-productPrice'>Precio ($): <span>{item.price}</span></p>
+                    <p className='cartItem-rightSide-category row flex-nowrap '>Categoría: <span><p className='text-uppercase'> {item.category} </p> </span></p>
+                    <div className='cartItem-rightSide-prices '>
+                        <p className='cartItem-rightSide-productPrice justify-content-evenly'>Precio ($): <span>{item.price}</span></p>
                         <p className='cartItem-rightSide-productQty'>Cantidad: <span>{item.qty}</span></p>
                     </div>
                     <p className='cartItem-rightSide-subtotal'>SubTotal ($) : <span>{item.price * item.qty}</span></p>
