@@ -1,0 +1,10 @@
+@import '../../sass/fonts';
+@import '../../sass/vars';
+
+.cartContainer{
+    .cartContainer-noItems-h1 {
+        font-family: $fontTitle;
+        color: $fontColor;
+        justify-content: center;
+    }
+}

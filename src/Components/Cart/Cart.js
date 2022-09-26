@@ -9,7 +9,7 @@ export default function Cart () {
     return(
         <div className='cartContainer'>
             {
-                cartList.length === 0 ? (<h1>Carrito vacio</h1>) :(<CartContainer />)
+                cartList.length === 0 ? (<h1 className='cartContainer-noItems-h1 d-flex col-12'>Carrito vacio</h1>) :(<CartContainer />)
             }
             
         </div>
