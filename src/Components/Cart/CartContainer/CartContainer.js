@@ -20,7 +20,7 @@ export default function CartContainer() {
 
     return (
         <>
-            <div className="cartContainer-title d-flex col-12">
+            <div className="cartContainer-title d-flex col-12 ">
                 <div className="cartContainer-title-qtyCart col-6">
                     <h2>
                         Mi carrito ({qtyItems()} {qtyItems() > 1 ? 'items' : 'item'})
@@ -30,16 +30,16 @@ export default function CartContainer() {
                     <Link to={'/shop'} className='cartContainer-title-keepshopingBtn-link'>
                         <h4 className="col-2">Seguir Comprando</h4>
                     </Link>
-                    <h4 className="col-2" onClick={handleClearCarrito} >Vaciar Carrito</h4>
+                    <h4 className="col-2" onClick={handleClearCarrito}  >Vaciar Carrito</h4>
                 </div>
             </div>
-            <Container className="cartDetail-container d-flex">
-                <div className="cartDetail-container-leftSide" >
+            <Container className="cartDetail-container d-flex col-12 align-items-center">
+                <div className="cartDetail-container-leftSide col-6" >
                     {
                         cartList.map((item) => (<CartDetail key={item.id} item={item} />
                         ))}
                 </div>
-                <div className="cartDetail-container-rightSide">
+                <div className="cartDetail-container-rightSide col-6">
                     <h3 className="cartDetail-container-rightSide-h3">Resumen pedido</h3>
 
                     <div className="cartDetail-container-rightSide-section">
@@ -53,12 +53,12 @@ export default function CartContainer() {
                         <hr />
                     </div>
                     <div className="cartDetail-container-rightSide-section">
-                        <h4 className="cartDetail-container-rightSide-section-h4"> TOTAL :</h4>
+                        <h4 className="cartDetail-container-rightSide-section-h4"> TOTAL ($) :</h4>
                         <p className="cartDetail-container-rightSide-section-p">{montoFinal()}</p>
                         <hr />
                     </div>
 
-                    <div className="cartDetail-container-righSide-section-logos ">
+                    <div className="cartDetail-container-righSide-section-logos d-flex justify-content-evenly ">
                         <img src={"./Images/amex-svgrepo-com.svg"} alt='amex logo'/>
                         <img src={"./Images/apple-pay-payment-mark-logo-svgrepo-com.svg"} alt='apple pay logo'/>
                         <img src={"./Images/google-pay-primary-logo-logo-svgrepo-com.svg"} alt='google pay logo'/>

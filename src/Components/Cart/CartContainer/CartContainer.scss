@@ -5,8 +5,12 @@
     font-family: $fontTitle;
     color: $fontColor;
     text-shadow: $shadowColor 5px 5px 1px;
+    margin: 1em;
+    text-align: center;
+
 
     .cartContainer-title-keepshopingBtn{
+        cursor: pointer;
         .cartContainer-title-keepshopingBtn-link{
             text-decoration: none;
             color: $fontColor;
@@ -14,5 +18,19 @@
     }   
 }
 .cartDetail-container{
+    
+    .cartDetail-container-rightSide{
 
+        text-align: center;
+        .cartDetail-container-rightSide-h3{
+            
+            font-family: $fontTitle;
+            color: $fontColor;
+        }
+        .cartDetail-container-rightSide-section{
+            font-family: $fontTitle;
+            color: $fontColor;
+            
+        }
+    }
 }
