@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Heroe.scss'
 
-///TO DO: CONTACT FORM WITH VALIDATIONS 
 
 const Heroe = () => {
     return (
@@ -22,7 +22,8 @@ const Heroe = () => {
                 </div>
                 <div className='paragraph col-12'>
                     <h4><strong>Mas información</strong></h4>
-                    <p>Si estás interesado en formar parte de <strong>Coffeeholics</strong>,  completá el siguiente formulario de contacto.</p>
+                    <p>Si estás interesado en formar parte de <strong>Coffeeholics</strong>,  <Link to={'/contact'} rel='noreferrer' className='text-light'>
+                        completá el siguiente formulario de contacto. </Link></p>
                 </div>
             </div>
         </>
