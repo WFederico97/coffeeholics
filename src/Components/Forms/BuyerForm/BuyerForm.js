@@ -5,20 +5,21 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Alert from 'react-bootstrap/Alert';
 import Modal from 'react-bootstrap/Modal';
 
-import './BuyerForm.scss'
 import { useCartContext } from "../../../Context/CartContext";
 
 import { agregarCompra } from "../../../Firebase/firebaseCalls";
+import { serverTimestamp } from "firebase/firestore";
 
 const initialState = {
   name: "",
   address: "",
   email: "",
   phone: "",
+  date: serverTimestamp()
 };
 
 export default function BuyerForm() {
-  const { cartList, clearCart, montoTotalCart, IVA } = useCartContext
+  const { cartList, clearCart, montoTotalCart, IVA } = useCartContext();
 
   //form states
   const [values, setValues] = useState(initialState);
@@ -45,10 +46,12 @@ export default function BuyerForm() {
       setAlerta(true)
       return;
     }
+
     setCargando(true)
 
     let items = []
-    cartList.forEach((item) => item.push({ id: item.id, title: item.name, price: item.price, qty: item.qty, }))
+
+    cartList.forEach((item) => items.push({ id: item.id, title: item.name, price: item.price, qty: item.qty, category: item.category }))
 
     let total = { subtotal: montoTotalCart(), iva: IVA(), total: montoTotalCart() + IVA() };
 
@@ -69,6 +72,7 @@ export default function BuyerForm() {
         onHide={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="buyerForm-container-modal"
       >
 
         <Modal.Header closeButton>
@@ -92,12 +96,13 @@ export default function BuyerForm() {
           <Form>
 
             <FloatingLabel
-              controlId="floatingInput"
+              controlId="name"
               label='Nombre'
               className="mb-3">
               <Form.Control
                 required
                 type='text'
+                name="name"
                 placeholder="Ingrese su nombre"
                 autoFocus
                 onFocus={() => setAlerta(false)}
@@ -106,10 +111,11 @@ export default function BuyerForm() {
             </FloatingLabel>
 
             <FloatingLabel
-              controlId="floatingInput"
+              controlId="surname"
               label='Apellido'
               className="mb-3">
               <Form.Control
+              name="surname"
                 type='text'
                 placeholder="Ingrese su Apellido"
                 autoFocus
@@ -119,11 +125,12 @@ export default function BuyerForm() {
             </FloatingLabel>
 
             <FloatingLabel
-              controlId="floatingInput"
+              controlId="email"
               label='Correo Electrónico'
               className="mb-3">
               <Form.Control
                 required
+                name="email"
                 type='email'
                 placeholder="Ingrese su correo electrónico"
                 autoFocus
@@ -133,11 +140,12 @@ export default function BuyerForm() {
             </FloatingLabel>
 
             <FloatingLabel
-              controlId="floatingInput"
+              controlId="address"
               label='Dirección'
               className="mb-3">
               <Form.Control
                 required
+                name="address"
                 type='text'
                 placeholder="Ingrese su Domicilio"
                 autoFocus
@@ -147,21 +155,23 @@ export default function BuyerForm() {
             </FloatingLabel>
 
             <FloatingLabel
-              controlId="floatingInput"
+              
+              controlId="phone"
               label='Teléfono'
               className="mb-3">
               <Form.Control
                 type='number'
+                name="phone"
                 placeholder="Ingrese su numero de telefono"
 
               />
             </FloatingLabel>
             <Button
+            className={idCompra !== '' ? 'boton-finalizar-compra-oculto d-none ' : 'boton-finalizar-compra m-1 w-100'}
+            type='submit'
             variant="primary"
-            type="submit"
             onClick={handleConfirmar}
             disabled={cargando}
-            className='w-100 m-1'
           >
             Confirmar Compra
           </Button>
