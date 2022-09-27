@@ -26,7 +26,6 @@ const NavbarHeader = () => {
                             <Nav.Link href="/#About">Sobre Nosotros</Nav.Link>
                             <Nav.Link href="/#Franchise">Franchising</Nav.Link>
                             <Nav.Link as={Link} to={'/shop'}>Coffeeshop</Nav.Link>
-                            <RiUserFill id='login' className='navbarIcon' style={{ width: '2em', height: '2em', color: '#fff', margin: '1em' }} />
                             <CartWidget/>
                         </Nav>
                     </Navbar.Collapse>
