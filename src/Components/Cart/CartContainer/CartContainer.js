@@ -20,17 +20,17 @@ export default function CartContainer() {
 
     return (
         <>
-            <div className="cartContainer-title d-flex col-12 ">
-                <div className="cartContainer-title-qtyCart col-6">
+            <div className="cartContainer-title d-flex col-10 justify-content-evenly ">
+                <div className="cartContainer-title-qtyCart col-4">
                     <h2>
                         Mi carrito ({qtyItems()} {qtyItems() > 1 ? 'items' : 'item'})
                     </h2>
                 </div>
-                <div className="cartContainer-title-keepshopingBtn d-flex col-6">
+                <div className="cartContainer-title-keepshopingBtn d-flex col-4 justify-content-center">
                     <Link to={'/shop'} className='cartContainer-title-keepshopingBtn-link'>
-                        <h4 className="col-2">Seguir Comprando</h4>
+                        <h4 className="col-1">Seguir Comprando</h4>
                     </Link>
-                    <h4 className="col-2" onClick={handleClearCarrito}  >Vaciar Carrito</h4>
+                    <h4 className="col-1" onClick={handleClearCarrito}  >Vaciar Carrito</h4>
                 </div>
             </div>
             <Container className="cartDetail-container d-flex col-12 align-items-center">

@@ -2,6 +2,7 @@
 @import '../../sass/vars';
 
 .cartContainer{
+    height: 100vh;
     .cartContainer-noItems-h1 {
         font-family: $fontTitle;
         color: $fontColor;
