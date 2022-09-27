@@ -8,6 +8,7 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import CartProvider from './Context/CartContext';
 import Cart from './Components/Cart/Cart';
+import ContactForm from './Components/Forms/ContactForm/ContactForm';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/category/:tipo' element={<ItemListContainer greeting={'¡Bienvenidos/as al shop de Coffeeholics!'} />} />
             <Route path='/producto/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/contact' element={<ContactForm />} />
           </Routes>
 
           <footer>
