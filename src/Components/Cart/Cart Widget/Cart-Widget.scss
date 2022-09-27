@@ -8,17 +8,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-    
-    
-        .navbarIcon-qtyItems{
-            font-family: $fontParagraph;
-            padding: 0.5em;
-            background-color: $shadowColor;
-            border-radius: 50%;
-            font-size: 1.5em;
-            color: $colorLinkHovered;
-
-        }
+        font-family: $fontParagraph;
+        
         #cart g {
             color: $shadowColor;
             

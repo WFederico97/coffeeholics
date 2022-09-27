@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import './Cart-Widget.scss'
 
 import { useCartContext } from '../../../Context/CartContext'
+import Badge from "react-bootstrap/esm/Badge";
 
 
 const CartWidget = () => {
@@ -11,10 +12,10 @@ const CartWidget = () => {
     const { qtyItems } = useCartContext();
     return (
         <Link to={'/cart'} className='cartWidget-container-link'>
-            <div className="cartWidget-container">
+            <Badge className="cartWidget-container bg-transparent fs-6">
             <RiShoppingCart2Fill id='cart' className='navbarIcon' style={{ width: '2em', height: '2em', color: '#fff', margin: '1em' }} />
-            <p className="navbarIcon-qtyItems">{qtyItems()}</p>
-            </div>
+            {qtyItems() || " "} 
+            </Badge>
 
         </Link>
 
