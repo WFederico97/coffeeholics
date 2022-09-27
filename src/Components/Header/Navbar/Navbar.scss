@@ -1,36 +1,40 @@
 @import "../../../sass/fonts";
 @import "../../../sass/vars";
 
-.App-logo {
-  height: 4em;
-  pointer-events: none;
-  border-radius: 70%;
-}
-
-.nav-link {
+.homeLink {
+  text-decoration: none;
+  padding: 1em;
+  .App-logo {
+    height: 4em;
+    pointer-events: none;
+    border-radius: 30%;
+  }
+  .coverHomeH3 {
     color: $fontColor;
     font-family: $fontTitle;
     filter: drop-shadow(5px 3px 1px $shadowColor);
+  }
 }
 
-.nav-link:hover  {
-    color: $colorLinkHovered;
-    -webkit-transform: scale(1.15); 
-    transform: scale(1.15);
-}
-
-.nav-link:active {
-  color: $shadowColor;
-  filter: drop-shadow(5px 3px 1px $colorLinkHovered);
-
-}
-
-.coverHomeH3 {
+.nav-link {
   color: $fontColor;
   font-family: $fontTitle;
   filter: drop-shadow(5px 3px 1px $shadowColor);
 }
 
-.homeLink {
-    text-decoration: none;
+.nav-link:hover {
+  color: $colorLinkHovered;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.nav-link:active {
+  color: $shadowColor;
+  filter: drop-shadow(5px 3px 1px $colorLinkHovered);
+}
+
+.navbar-toggler.collapsed{
+  .navbar-toggler-icon{
+    color: $fontColor;
+  }
 }
