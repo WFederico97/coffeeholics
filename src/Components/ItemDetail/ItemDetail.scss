@@ -46,17 +46,17 @@
 
 .cardItemDetail-title {
   position: relative;
-  color: $shadowColor;
+  color: $blackColor;
   text-align: center;
   font-size: 2em;
   font-family: $fontTitle;
   background-color: transparent;
-  filter: drop-shadow(5px 3px 3px $blackColor);
+  filter: drop-shadow(5px 3px 3px $shadowColor);
 }
 
 .cardItemDetail-text,
 .cardItemDetail-text-p {
-  color: $colorFontParagraph;
+  color: $blackColor;
   text-shadow: -4px -3px  $shadowTextColor;
   position: relative;
   display: flex;

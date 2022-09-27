@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { productosById } from "../../Firebase/firebaseCalls";
-import Spinner from "react-bootstrap/esm/Spinner";
+import SpinnerLoading from "../../Utils/Spinner/Spinner";
 
 export default function ItemDetailContainer () {
     const [producto, setProducto] = useState({});
@@ -16,12 +16,12 @@ export default function ItemDetailContainer () {
             setProducto(producto);
             setIsLoading(false)
         });
-    }, [])
+    }, [id])
 
     return (
         <div className="itemDetailContainer container-fluid d-flex col col-12 justify-content-center">
             {
-                isLoading ? (<Spinner/>) : (<ItemDetail producto={producto} />)
+                isLoading ? (<SpinnerLoading/>) : (<ItemDetail producto={producto} />)
             }
         </div>
     )
