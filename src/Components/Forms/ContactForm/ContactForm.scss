@@ -1,0 +1,13 @@
+@import '../../../sass/fonts';
+@import '../../../sass/vars';
+
+.container-contactForm {
+    font-family: $fontTitle;
+    color: $fontColor;
+    height: 100vh;
+    filter: drop-shadow(5px 8px 3px $blackColor);
+    .container-contactForm-title{
+        text-align: center;
+    }
+
+}
