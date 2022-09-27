@@ -2,7 +2,7 @@
 
 <br />
 <div align='center'>
-  <img src='Images/logotipo-cafeteria.png' alt='Logo' width='80' height='80'
+  <img src='public/Images/logotipo-cafeteria.png' alt='Logo' width='180' height='180'
   <h3 align='center'> Coffeeholics </h3>
 </div>
 
@@ -16,8 +16,8 @@ Tiene una sección estática, donde uno puede ver diferentes temas de interés d
 
 ## Built With
 
-* [![React][React.js]]
-* [![Bootstrap][Bootstrap]]
+* ![React][React.js]
+* ![Bootstrap][Bootstrap.com]
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
@@ -26,7 +26,7 @@ Tiene una sección estática, donde uno puede ver diferentes temas de interés d
 
 ## Contact
 
-[![LinkedIn][linkedin-shield]] -  wuthrich09@gmail.com
+![LinkedIn][linkedin-shield] -  wuthrich09@gmail.com
 
 Project Link: [https://github.com/WFederico97/coffeeholics](https://github.com/WFederico97/coffeeholics)
 
@@ -36,3 +36,4 @@ Project Link: [https://github.com/WFederico97/coffeeholics](https://github.com/W
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
